@@ -1,0 +1,64 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: lightcyan;
+  height: 100px;
+}
+
+main {
+  margin-top: 6em;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+
+  height: 70vh;
+  width: 100vw;
+  background: lightgreen;
+  color: #FFF;
+  border: 2px solid lightseagreen;
+}
+
+section > .container {
+  font-size: 6rem;
+}
+
+header {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+}
+
+header > h1 {
+  margin: 0;
+}
+
+#list-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2em;
+}
+
+.list-item {
+  cursor: pointer;
+  padding: 1em 2em;
+  transition: all 250ms ease;
+}
+
+.list-item.onView {
+  background: black;
+  color: #FFF;
+}
